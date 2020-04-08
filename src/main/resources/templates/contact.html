@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Contact</title>
+</head>
+<body>
+
+<a href="/contacts" id="add-btn" class="waves-effect waves-light btn grey lighten-1">Contacts</a>
+
+<ul class="collection with-header">
+    <li class="collection-header">
+        <h5>Contact</h5>
+    </li>
+    <li class="collection-item row">
+        <span class="col s3">Name</span>
+        <span th:text="${contact.name}"></span>
+    </li>
+    <li class="collection-item row">
+        <span class="col s3">Last Name</span>
+        <span th:text="${contact.lastName}"></span>
+    </li>
+    <li class="collection-item row">
+        <span class="col s3">Age</span>
+        <span th:text="${contact.age}"></span>
+    </li>
+</ul>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
